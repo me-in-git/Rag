@@ -1,8 +1,8 @@
-# Gemma Cricket Project
+# RAG Project
 
 A polished end-to-end cricket commentary system built on Gemma 2 with data augmentation, fine-tuning, and hybrid retrieval.
 
-## Resume-worthy highlights
+## Highlights
 
 - Data augmentation pipeline for cricket commentary generation
 - Fine-tuning support using `peft` and `trl` for efficient instruction tuning
