@@ -1,0 +1,16 @@
+transformers>=4.40.0
+accelerate>=0.23.0
+torch>=2.0.1
+datasets>=2.13.0
+peft>=0.5.0
+trl>=0.8.0
+sentence-transformers>=2.2.2
+faiss-cpu>=1.7.4
+pandas>=2.0.0
+tqdm>=4.66.0
+fastapi>=0.101.0
+rank_bm25>=0.2.2
+uvicorn>=0.23.0
+python-multipart>=0.0.6
+pytest>=8.0.0
+gradio>=3.50.0

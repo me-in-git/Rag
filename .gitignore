@@ -1,0 +1,39 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+.env
+.env.*
+*.log
+models/
+**/checkpoint-*/
+
+# Large datasets and PDFs
+train.jsonl
+gptgen.jsonl
+cricket_instructions.jsonl
+cricket_match_summary.jsonl
+cricket_factss.jsonl
+*.pdf
+
+# Model adapters
+cricket-commentary-model/
+cricket-fixed/
+
+# Generated bundles
+gemma_space_bundle.zip
+gemma_space_bundle/
+gemma_project_bundle/
+
+# Raw data and databases
+data/
+cricket/
+
+# FAISS Vector indices and evaluation results
+*.faiss
+rag_chunk_metadata.json
+rag_metadata_demo.json
+evaluation_results.json
+manual_evaluation_results.json
+hybrid_query_results.jsonl
