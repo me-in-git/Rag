@@ -58,22 +58,6 @@ Q: Describe a tense final over of a cricket match.
 A: The final over of a cricket match is a tense one.
 ```
 
-**Architecture (high-level)**
-
-```mermaid
-flowchart LR
-  A[User Query] --> B{Router}
-  B -->|STATS| C[Match-level metadata (Pandas)]
-  B -->|STORY| D[Hybrid Retriever]
-  D --> E[BM25 index (rank_bm25)]
-  D --> F[FAISS index (dense embeddings)]
-  E & F --> G[Score Fusion]
-  G --> H[Top Over-level Chunks]
-  H --> I[Generator (LLM) for narrative answers]
-  C --> J[Deterministic STATS resolver]
-  J --> K[Response]
-  I --> K
-```
 
 ### Evaluation
 
