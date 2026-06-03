@@ -69,10 +69,7 @@ python evaluate_rag.py
 
 This produces `evaluation_results.json` containing `stats_accuracy` and `story_retrieval_precision_at_3`.
 
-### Current evaluation (local run)
 
-- `stats_accuracy`: 0.4286
-- `story_retrieval_precision_at_3`: 1.0
 
 The evaluation harness now builds the chunked over-level index automatically if it is missing, so the metrics are reproducible with `python evaluate_rag.py`.
 
