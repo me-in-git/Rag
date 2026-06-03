@@ -1,6 +1,6 @@
 # RAG Project
 
-A polished end-to-end cricket commentary system built on Gemma 2 with data augmentation, fine-tuning, and hybrid retrieval.
+A polished end-to-end cricket commentary system built with data augmentation, fine-tuning, and hybrid retrieval.
 
 ## Highlights
 
@@ -73,17 +73,9 @@ This produces `evaluation_results.json` containing `stats_accuracy` and `story_r
 
 The evaluation harness now builds the chunked over-level index automatically if it is missing, so the metrics are reproducible with `python evaluate_rag.py`.
 
-### Deploy to HuggingFace Spaces
-
-1. Create a new Space (Gradio) at https://huggingface.co/spaces and choose "Gradio".
-2. Push this repo (or the `gemma_project_bundle` folder) to the Space's Git repo.
-3. Ensure `requirements.txt` includes all dependencies (already updated). The Space will install them.
-4. The `space_app.py` file is a minimal Gradio app that exposes the QA/demo UI. The Space will auto-launch and provide a live URL once the repository is pushed.
-
-Important: large model checkpoints are not uploaded to Spaces in most free tiers; instead use smaller open models or a model hosted on HF Model Hub and load with `from_pretrained` using the model repo id.
 
 
-3. Fine-tune the model (optional):
+3. Fine-tune the model:
 
 ```bash
 python pipeline.py finetune \
